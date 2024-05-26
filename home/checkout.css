@@ -1,0 +1,207 @@
+.checkout-content-wrap{
+    background-color: var(--light-grey);
+    padding: 0 1rem 1rem 1rem;
+}
+.checkout-content{
+    gap: 2rem;
+    flex-direction: column;
+}
+.checkout-content-wrap > :nth-child(1){
+    padding: 2rem 0;
+}
+.bg-black{
+    height: 120px;
+    background-color: rgb(27, 25, 25);
+}
+.b{
+    border: 1px solid black;
+}
+.billing-details-wrap{
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--white);
+}
+.summary-wrap{
+    width: 100%;
+    background-color: var(--white);
+    padding: 2rem;
+    gap: 1.5rem;
+    height: 680px;
+    border-radius: 8px;
+}
+.billing-details-wrap > div > h6, .payment-method p{
+    font-family: "Merriweather", serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: .08038rem;
+}
+.billing-details-wrap input:hover, .payment-type div:hover{
+    border: 1px solid var(--primary);
+}
+.billing-details, .shipping-fee,.markphone2-content h6{
+    font-family: "Merriweather", serif;
+    color: var(--primary);
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+}
+.billing-details{
+    padding: 2rem 0 1rem 0;
+}
+.shipping-fee{
+    padding: 2rem 0 1rem 0;
+}
+.address p{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: 0 0 1rem 0;
+}
+.details-input{
+    flex-direction: column;
+    gap: 2rem;
+}
+.details-input  div, .phone-number p{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    width: 100%;
+    gap: 1rem;
+}
+.phone-number p{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: 2rem 0 1rem 0;
+}
+.details-input input, .phone-number input, .address input{
+    border: 1px solid #cfcfcf;
+    width: 100%;
+    border-radius: 8px;
+    height: 56px;
+}
+.radio{
+    width: 20px;
+    height: 20px;
+    accent-color: #d87d4a;
+    display: block;
+    position: absolute;
+    left: 15px;
+    cursor: pointer
+}
+.payment-type div{
+    width: 100%;
+    /* padding: 0 0 0 1rem; */
+    position: relative;
+    border-radius: 8px;
+    height: 56px;
+    border: 1px solid #cfcfcf;
+}
+.phone-number input{
+    width: 100%;
+}
+.payment-type{
+    gap: 1rem;
+    width: 100%;
+    align-items: flex-end;
+}
+.payment-type label{
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    padding: 0 21px 0 48px;
+    position: relative;
+
+}
+.payment-type label:hover{
+    font-weight: 700;
+}
+.light-grey{
+    color: rgba(0,0,0,.5);
+}
+.pad-2{
+    padding: 0.5px 0;
+    
+}
+.pad-total{
+    padding: 1.5rem 0 0rem 0;
+}
+
+@media (min-width: 768px){
+    .checkout-content{
+        flex-direction: column;
+    }
+    .details-input{
+        flex-direction: row;
+    }
+    .details-input div{
+        width: 50%;
+    }
+    .phone-number input{
+        width: 50%;
+    }
+    .payment-type div {
+        width: 50%;
+    }
+    .checkout-content-wrap{
+        padding: 0 3rem 3rem 3rem;
+    }
+    .bg-black{
+        height: 60px;
+    }
+
+}
+@media (min-width: 1024px){
+    .checkout-content{
+        flex-direction: row;
+    }
+    .billing-details-wrap{
+        width: 65%;
+    }
+    .summary-wrap{
+        width: 35%;
+        height: 650px;
+    }
+    .details-input{
+        flex-direction: row;
+    }
+    .details-input div{
+        width: 50%;
+    }
+    .phone-number input{
+        width: 50%;
+    }
+    .payment-type div {
+        width: 50%;
+    }
+    .checkout-content-wrap{
+        padding: 0 3rem 3rem 3rem;
+    }
+    .bg-black{
+        height: 0;
+    }
+}
+@media (min-width: 1280px){
+    .checkout-content{
+        flex-direction: row;
+    }
+    .billing-details-wrap{
+        width: 65%;
+    }
+    .summary-wrap{
+        width: 35%;
+        height: 650px;
+    }
+    .details-input{
+        flex-direction: row;
+    }
+    .bg-black{
+        height: 0;
+    }
+    .details-input div{
+        width: 50%;
+    }
+    .phone-number input{
+        width: 50%;
+    }
+    .payment-type div {
+        width: 50%;
+    }
+    .checkout-content-wrap{
+        padding: 0 3rem 3rem 3rem;
+    }
+    
+}

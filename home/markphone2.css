@@ -1,0 +1,284 @@
+.goback-pad{
+    padding: 2rem 0;
+}
+.amount{
+    /* font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
+    font-size: 1.125rem;
+    font-weight: 700 !important;
+    letter-spacing: .08038rem;
+    padding: 2rem  0;
+}
+.input-btn input{
+    height: 48px;
+    width: 120px;
+    background-color: var(--light-grey);
+    padding: 0 0.5rem ;
+    border: none;
+}
+.input-btn button, .img-wrap button{
+    border: none;
+    font-family: "Merriweather", serif;
+    font-size: .8125rem;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    cursor: pointer;
+    padding: 1rem ;
+    width: 150px;
+    background-color: var(--primary);
+}
+.input-btn button:hover, .img-wrap button:hover{
+    background-color: var(--primary-light);
+}
+.markphone2-wrap{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.markphone2-content, .features{
+    width: 100%;
+}
+.markphone2-content{
+    margin: 0 0 2rem 0;
+}
+.features-wrap{
+    margin: 3rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.features{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.markphone2-img{
+    background-color: var(--light-grey);
+    width: 100%;
+}
+.img-bg{
+    background-color: var(--light-grey);
+    width: 100%;
+    border-radius: 8px;
+}
+.markphone2-img img, .img-bg img{
+    width: 100%;
+}
+.markphone2-content h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: .07144rem;
+    padding: 1rem 0;
+    width: 100%;
+}
+.features h3, .img-wrap h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: .07144rem;
+    padding: 1.5rem 0;
+}
+.markphone2-content p, .features p{
+    font-size: .9375rem;
+    font-weight: 500;
+    line-height: 1.5625rem;
+}
+.markphone2-content p{
+    width: 100%;
+}
+.features p{
+    width: 100%;
+}
+.features span{
+    padding:  0 1rem 0 0;
+    color: var(--primary);
+}
+.box-pad{
+    padding: 0;
+}
+.img-wrap, .img-container,.input-btn {
+    gap: 1rem;
+}
+.w-img div{
+    width: 15rem;
+}
+.w-big-img div{
+    width: 15rem;
+}
+
+.bg-1{
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/image-gallery-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.bg-2{
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/image-gallery-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.bg-3{
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/image-gallery-2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+.img-container{
+    margin:  0 0 5rem 0;
+    flex-direction: column;
+}
+.img-wrap-btn{
+    width: 100%;
+    gap: 1rem;
+}
+.sales-wrap{
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 768px){
+    .markphone2-img{
+        background-color: var(--light-grey);
+        width: 100%;
+    }
+    .img-bg{
+        background-color: var(--light-grey);
+        width: 100%;
+    }
+    .w-big-img div{
+        width: 40rem;
+    }
+    .w-img div{
+        width: 40rem;
+    }
+}
+@media (min-width: 1024px){
+    .img-container{
+        flex-direction: row;
+    }
+    .bg-1{
+        width: 40rem;
+        height: 440px;
+    }
+    .bg-2{
+        width: 100%;
+        height: 440px;
+    }
+    .bg-3{
+        width: 50%;
+        height: 895px;
+    }
+    .markphone2-wrap{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .markphone2-content, .features{
+        width: 35%;
+    }
+    .markphone2-content p{
+        width: 70%;
+    }
+    .markphone2-content{
+        margin: 0;
+    }
+    .markphone2-img{
+        background-color: var(--light-grey);
+        width: 38%;
+    }
+    .img-bg{
+        background-color: var(--light-grey);
+        width: 100%;
+    }
+    .features-wrap{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .features{
+        width: 50%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .box-pad{
+        padding: 0 0 0 12rem;
+    }
+    .sales-wrap{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .w-big-img div{
+        width: 20rem;
+    }
+}
+@media (min-width: 1280px){
+    .img-container{
+        flex-direction: row;
+    }
+    .bg-1{
+        width: 40rem;
+        height: 440px;
+    }
+    .bg-2{
+        width: 100%;
+        height: 440px;
+    }
+    .bg-3{
+        width: 50%;
+        height: 895px;
+    }
+    .markphone2-wrap{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .markphone2-content, .features{
+        width: 35%;
+    }
+    .markphone2-content{
+        margin: 0;
+    }
+    .markphone2-content p, .markphone2-content h3{
+        width: 70%;
+    }
+    .markphone2-img{
+        background-color: var(--light-grey);
+        width: 38%;
+    }
+    .img-bg{
+        background-color: var(--light-grey);
+        width: 100%;
+    }
+    .features-wrap{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .features{
+        width: 50%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .box-pad{
+        padding: 0 0 0 12rem;
+    }
+    .sales-wrap{
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .w-big-img div{
+        width: 37rem;
+    }
+    
+}
