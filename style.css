@@ -160,7 +160,7 @@ input:focus{
 .bg-content{
     background-color: rgb(27, 25, 25);
     min-height: 700px;
-    background-image: url('../assets/image-header\ \(1\).jpg');
+    background-image: url('assets/image-header\ \(1\).jpg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -326,7 +326,7 @@ input:focus{
     background-color: transparent;
     width: 100%;
     height: inherit;
-    background: url("../assets/image-speaker-zx7.jpg");
+    background: url("assets/image-speaker-zx7.jpg");
     background-size: cover;
     /* margin: 2rem 0; */
     background-position-x: 0px;
@@ -502,7 +502,7 @@ input:focus{
         gap: 3rem;
     }
     .bg-content{
-        background-image: url('../assets/image-hero.jpg');
+        background-image: url('assets/image-hero.jpg');
         background-position-y: -20px;
         background-position-x: 170px;
         justify-content: flex-start;
@@ -637,7 +637,7 @@ input:focus{
         top: 90px;
     }
     .bg-content{
-        background-image: url('../assets/image-hero.jpg');
+        background-image: url('assets/image-hero.jpg');
         background-position-y: -20px;
         background-position-x: 170px;
         justify-content: flex-start;
