@@ -22,7 +22,7 @@
     display: grid;
 }
 .pad-3{
-    padding: 0 3rem;
+    padding: 0 1.5rem;
 }
 .flex-col{
     flex-direction: column;
@@ -44,6 +44,7 @@
 }
 .header, .bg{
     background-color: rgb(27, 25, 25);
+    max-width: 100%;
 }
 .top-nav{
     width: 100%;
@@ -87,10 +88,10 @@ a{
     text-transform: uppercase;
 }
 .logo-img{
-    width: 50%;
+    width: 70%;
 }
 .icon-cart-img{
-    width: 60%;
+    width: 70%;
     height: 25px;
 }
 .carts{
@@ -160,6 +161,7 @@ input:focus{
 .bg-content{
     background-color: rgb(27, 25, 25);
     min-height: 700px;
+    /* max-width: 1440px; */
     background-image: url('assets/image-header\ \(1\).jpg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -488,6 +490,9 @@ input:focus{
     .speaker-zx7-bg{
         align-items: flex-start;
     }
+    .pad-3{
+        padding: 0 3rem;
+    }
 }
 @media  (min-width: 1024px) {
     .logo-img{
@@ -617,6 +622,9 @@ input:focus{
     }
     .text-center{
         text-align: start;
+    }
+    .pad-3{
+        padding: 0 3rem;
     }
 }
 @media  (min-width: 1280px) {
@@ -749,4 +757,8 @@ input:focus{
     .speaker-zx7-bg{
         align-items: flex-start;
     }
+    .pad-3{
+        padding: 0 3rem;
+    }
+    
 }
