@@ -66,6 +66,9 @@ a{
     letter-spacing: .05806rem;
     color: var(--white);
 }
+.bg-h1{
+    width: 300px;
+}
 .bg h1{
     font-family: "Merriweather", serif;
     font-size: 2rem;
@@ -166,8 +169,8 @@ input:focus{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-position-y: 0px;
-    background-position-x: 0px;
+    /* background-position-y: 0px; */
+    /* background-position-x: 0px; */
     justify-content: center;
     padding: 0;
 }
@@ -254,15 +257,16 @@ input:focus{
     letter-spacing: .125rem;
     justify-content: center;
     width: 100%;
-    gap: 0rem;
+    gap: 2rem;
+    padding: 0 1.5rem;
     padding-top: 100px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 .product-img-container{
     background: #f1f1f1;
     /* height: 204px; */
-    width: 80%;
+    width: 330px;
     /* flex-shrink: 0; */
     border-radius: 8px;
     gap: 16px;
@@ -364,6 +368,7 @@ input:focus{
     margin: 5rem 0;
     gap: 2rem;
     flex-direction: column;
+    order: 1;
 }
 .about div{
     border-radius: 8px;
@@ -374,7 +379,8 @@ input:focus{
 }
 .about-img{
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    order:-1;
 }
 .about-img img{
     width: 100%;
@@ -385,7 +391,7 @@ input:focus{
 }
 .footer{
     background-color: var(--night);
-    padding: 3rem;
+    padding: 1rem;
 }
 .footer-content{
     width: 100%;
@@ -394,7 +400,7 @@ input:focus{
     flex-direction: column;
 }
 .footer-about{
-    width: 60%;
+    width: 100%;
     margin: 40px 0 0 0;
 }
 .footer-about > :nth-child(1){
@@ -454,6 +460,14 @@ input:focus{
     padding: 1rem 0 0 0;
 }
 @media  (min-width: 768px) {
+    .bg-h1{
+        width: 400px;
+    }
+    .carts{
+        width: 40%;
+        right: 150px;
+        top: 90px;
+    }
     .logo-img{
         width: 100%;
     }
@@ -471,8 +485,11 @@ input:focus{
         gap: 3rem;
         /* right: 5rem; */
     }
+    .about-img img{
+        width: 1000px;
+    }
     .product-img-container{
-        width: 50%;
+        width: 350px;
     }
     .product-wrap{
         flex-direction: row;
@@ -480,6 +497,9 @@ input:focus{
         padding-right: 3rem;
         gap: 1rem;
         /* height: 204px; */
+    }
+    .earphone-container div{
+        width: 700px;
     }
     .product-wrap h1{
         font-size: 1.75rem;
@@ -505,6 +525,9 @@ input:focus{
         position: relative;
         top: 0rem;
         gap: 3rem;
+    }
+    .bg-h1{
+        width: 400px;
     }
     .bg-content{
         background-image: url('assets/image-hero.jpg');
@@ -534,7 +557,7 @@ input:focus{
         font-size: 1.75rem;
     }
     .product-img-container{
-        width: 25%;
+        width: 300px;
     }
     .speaker-zx9-container{
         flex-direction: row;
@@ -548,9 +571,10 @@ input:focus{
     }
     .earphone-container{
         flex-direction: row;
+        justify-content: space-between;
     }
     .earphone-container div{
-        width: 50%;
+        width: 760px;
     }
     .earphone-content{
         align-items: flex-start;
@@ -565,15 +589,16 @@ input:focus{
     .about-img{
         align-items: flex-start;
         justify-content: flex-start;
+        order:2;
     }
     .w-40{
-        width: 80%;
+        width: 70%;
     }
     .about-content{
         align-items: flex-start;
     }
     .about-img img{
-        width: inherit;
+        width: 480px;
     }
     .flex-bottom-nav{
         flex-direction: row;
@@ -601,7 +626,9 @@ input:focus{
     .flex-bottom-nav li{
         text-align: start;
     }
-
+    .footer{
+        padding: 3rem;
+    }
     .margin-5{
         margin-top: 5rem;
     }
@@ -634,6 +661,9 @@ input:focus{
     .icon-cart-img{
         width: 80%;
     }
+    .w-760{
+        max-width: 760px;
+    }
     .top-navbar{
         position: relative;
         top: 0rem;
@@ -643,6 +673,9 @@ input:focus{
         width: 30%;
         right: 150px;
         top: 90px;
+    }
+    .bg-h1{
+        width: 400px;
     }
     .bg-content{
         background-image: url('assets/image-hero.jpg');
@@ -682,9 +715,10 @@ input:focus{
     }
     .earphone-container{
         flex-direction: row;
+        justify-content: space-between;
     }
     .earphone-container div{
-        width: 50%;
+        width: 760px;
     }
     .earphone-content{
         align-items: flex-start;
@@ -695,19 +729,20 @@ input:focus{
     }
     .about{
         flex-direction: row;
+
     }
     .about-img{
         align-items: flex-start;
         justify-content: flex-start;
     }
     .w-40{
-        width: 80%;
+        width: 70%;
     }
     .about-content{
         align-items: flex-start;
     }
     .about-img img{
-        width: inherit;
+        width: 600px;
     }
     .flex-bottom-nav{
         flex-direction: row;
@@ -726,6 +761,9 @@ input:focus{
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+    }
+    .footer{
+        padding: 3rem;
     }
     .footer-about{
         width: 30%;

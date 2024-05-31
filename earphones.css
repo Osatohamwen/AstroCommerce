@@ -15,6 +15,7 @@
 }
 .earphone-content{
     padding: 0;
+    order: -1;
 }
 .earphone-wrap{
     gap: 7rem;
@@ -58,6 +59,9 @@
     .earphone-wrap-content p{
         width: 65%;
     }
+    .earphone-content img{
+        width: 350px;
+    }
     .earphone-wrap div{
         width: 38%;
         align-items: flex-start;
@@ -77,6 +81,9 @@
     .earphone-wrap-content p{
         width: 65%;
     }
+    .earphone-content img{
+        width: 420px;
+    }
     .earphone-wrap div{
         width: 38%;
         align-items: flex-start;
@@ -91,10 +98,15 @@
     }
     .earphone-wrap{
         flex-direction: row;
-        z-index: 0;
     }
     .earphone-wrap-content p{
         width: 65%;
+    }
+    .earphone-content{
+        order: -2;
+    }
+    .earphone-content img{
+        width: 510px;
     }
     .earphone-wrap div{
         width: 38%;
